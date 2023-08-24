@@ -11,7 +11,8 @@ public class StarStudent {
 		
 		// 1. Initialize passedExam to a value.
 
-		boolean passedExam;
+		boolean passedExam = true;
+		didYouPass(passedExam);
 		
 		// 2. Call the didYouPass method with the variable you just initialized
 		//    as the parameter so that it shows a pop-up.
@@ -27,7 +28,7 @@ public class StarStudent {
 	
 	public static void didYouPass(boolean passedExam) {
 		
-		if(passedExam) {
+		if(passedExam = true) {
 			JOptionPane.showMessageDialog(null, "Congratulations!");
 		}
 		else {
