@@ -41,15 +41,16 @@ public class GooglyEyes extends PApplet {
     static final int HEIGHT = 600;
     
     PImage face;
-    
+   
     @Override
     public void settings() {
+       
         size(WIDTH, HEIGHT);
     }
     
     @Override
     public void setup() {
-
+    	 face= loadImage("cat.jpg");
     }
 
     @Override
