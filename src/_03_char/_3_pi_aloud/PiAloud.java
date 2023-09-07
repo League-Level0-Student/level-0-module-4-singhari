@@ -20,7 +20,7 @@ public class PiAloud {
 			System.out.println(pi.charAt(x));
 			if (canPlaySounds == true) {
 				Sound.speak(pi.charAt(x)+"");
-		        
+		        //t
 		    }
 		}
 		

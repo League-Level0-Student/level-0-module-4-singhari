@@ -17,7 +17,7 @@ for(int x = 0; x<loop; x++) {
 }
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
-
+//t
 		
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
