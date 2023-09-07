@@ -38,30 +38,61 @@ import processing.core.PImage;
  *      playWhoohoo() method, otherwise call the playDoh() method.
  */
 public class WheresWaldo extends PApplet {
-    static final int WIDTH = 600;
-    static final int HEIGHT = 400;
+    static final int WIDTH = 800;
+    static final int HEIGHT = 600;
 
     PImage waldo;
 
     @Override
     public void settings() {
         size(WIDTH, HEIGHT);
+        waldo = loadImage("waldo.jpg");
+    waldo.resize(WIDTH,HEIGHT);
+  //  System.out.println("X: " + mouseX + " Y: " + mouseY);  
+  //  System.out.println(mouseX);
     }
 
     @Override
     public void setup() {
-        
+    	background(waldo);
     }
 
     @Override
     public void draw() {
-        
+    	    	background(waldo);
+    	    	// System.out.println("X: " + mouseX + " Y: " + mouseY); 
+    	  // System.out.println(mouseX);
+    	  // System.out.println(mouseY);
+    	   //hand: x: 503 and y: 317
+    	   //foot or cane: x: 552 and y: 408
+    	    if(mousePressed == true) {
+    	    	if(mouseX > 503 && mouseX < 552) {
+    	    		if(mouseY > 317 && mouseY < 408) {
+    	    			playWhoohoo();
+    	    		}
+    	    		else {
+    	    			playDoh();
+    	    		}
+    	    	}
+    	    	else {
+    	    		playDoh();
+    	    	}
+    	    }
+    	    	
     }
 
     static public void main(String[] args) {
         PApplet.main(WheresWaldo.class.getName());
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
     /*********************** DO NOT MODIFY THE CODE BELOW ********************/
 
     Clip clip = null;
